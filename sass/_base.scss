@@ -71,11 +71,15 @@ $bp-smallest: 500px;
 html {
   box-sizing: border-box;
   font-size: 62.5%;    // 1rem = 10px  10/16px = 62.5%
+  
+  @include large {
+    font-size: 50%;
+  }
 }
 
 body {
-  font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  // font-family: 'Open Sans', sans-serif;
+  // font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
